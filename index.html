@@ -15,37 +15,37 @@
         <h1>Calculadora</h1>
 
         <!-- RESULTADO -->
-        <div id="res">
-            0
+        <div id="resultado">
+            <p id="res"></p>
         </div>
 
         <!-- BOTÕES -->
         <table>
         <tr>
-            <td><button id="numbox">C</button></td>
-            <td> <button id="numbox">0</button></td>
-            <td><button id="numbox">/</button></td>
-            <td> <button id="numbox">x</button></td>
+            <td><button id="numbox" onclick="clean()">C</button></td>
+            <td> <button id="numbox" onclick="insert('0')">0</button></td>
+            <td><button id="numbox" onclick="insert('/')">/</button></td>
+            <td> <button id="numbox" onclick="insert('*')">*</button></td>
         </tr>
         <tr>
-            <td><button id="numbox">7</button></td>
-            <td> <button id="numbox">8</button></td>
-            <td><button id="numbox">9</button></td>
-            <td> <button id="numbox">-</button></td>
-        </tr>
-
-        <tr>
-            <td><button id="numbox">4</button></td>
-            <td> <button id="numbox">5</button></td>
-            <td><button id="numbox">6</button></td>
-            <td> <button id="numbox">+</button></td>
+            <td><button id="numbox" onclick="insert('7')">7</button></td>
+            <td> <button id="numbox" onclick="insert('8')">8</button></td>
+            <td><button id="numbox" onclick="insert('9')">9</button></td>
+            <td> <button id="numbox" onclick="insert('-')">-</button></td>
         </tr>
 
         <tr>
-            <td><button id="numbox">1</button></td>
-            <td> <button id="numbox">2</button></td>
-            <td><button id="numbox">3</button></td>
-            <td> <button id="numbox">=</button></td>
+            <td><button id="numbox" onclick="insert('4')">4</button></td>
+            <td> <button id="numbox" onclick="insert('5')">5</button></td>
+            <td><button id="numbox" onclick="insert('6')">6</button></td>
+            <td> <button id="numbox" onclick="insert('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="numbox" onclick="insert('1')">1</button></td>
+            <td> <button id="numbox" onclick="insert('2')">2</button></td>
+            <td><button id="numbox" onclick="insert('3')">3</button></td>
+            <td><button id="numbox" onclick="calcular()">=</button></td>
         </tr>
     </table>
     </div>
